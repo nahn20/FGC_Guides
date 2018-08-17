@@ -70,6 +70,7 @@ public class advancedBox extends LinearOpMode {
         useMap1.undefinedCD1 = runtime.milliseconds();
         useMap1.x = runtime.milliseconds();
         while(opModeIsActive()){
+            telemetry.addData("Read this number here", colorSensorCheck());
             updateKeys();
             
             sendNextBall();
